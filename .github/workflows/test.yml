@@ -1,0 +1,14 @@
+name: Simple Test Workflow
+
+on:
+  workflow_dispatch: # manual trigger
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: 23f1000204@ds.study.iitm.ac.in
+        run: echo "Hello, world!"
